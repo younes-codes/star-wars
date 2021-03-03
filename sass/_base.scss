@@ -1,9 +1,13 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 // Reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   list-style-type: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {

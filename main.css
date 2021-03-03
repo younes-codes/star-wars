@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   list-style-type: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -35,7 +37,6 @@ nav {
   nav {
     background-image: url(./assets/header-bg-2x.png);
     height: 600px;
-    background-size: auto;
   }
 }
 
@@ -94,8 +95,10 @@ nav .navigation-container .menu ul {
   nav .navigation-container .menu ul {
     padding: 0;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
+    max-width: 768px;
+    margin: auto;
   }
 }
 
@@ -141,6 +144,7 @@ nav .navigation-container .open-menu {
 
 nav .logo-container {
   width: 100%;
+  max-width: 500px;
   height: auto;
   position: absolute;
   top: 50%;
@@ -162,6 +166,13 @@ section p {
   padding: 0 20px;
   margin-bottom: 20px;
   font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  section p {
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -274,16 +285,27 @@ section p {
   line-height: 20px;
 }
 
+@media (min-width: 768px) {
+  .section-2 .part-two ul li {
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+}
+
 footer {
   background: url(./assets/darthvader.jpg) no-repeat center/auto;
   height: 271px;
   width: 100%;
+  background-color: #000000;
 }
 
 @media (min-width: 524px) {
   footer {
-    height: 542px;
-    background: url(./assets/darthvader_2x.jpg) no-repeat center/cover;
+    height: 642px;
+    background: url(./assets/darthvader_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     display: flex;
     flex-wrap: wrap;
     align-content: center;

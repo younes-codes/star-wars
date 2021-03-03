@@ -2,10 +2,14 @@ footer {
   background: url(./assets/darthvader.jpg) no-repeat center / auto;
   height: 271px;
   width: 100%;
+  background-color: #000000;
 
   @include mq-footer {
-    height: 542px;
-    background: url(./assets/darthvader_2x.jpg) no-repeat center / cover;
+    height: 642px;
+    background: url(./assets/darthvader_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     display: flex;
     flex-wrap: wrap;
     align-content: center;

@@ -13,6 +13,10 @@ section {
     padding: 0 20px;
     margin-bottom: 20px;
     font-size: 1.4rem;
+    @include mq-tablet {
+      font-size: 1.8rem;
+      line-height: 28px;
+    }
   }
 }
 
@@ -101,6 +105,10 @@ section {
       li {
         font-size: 1.4rem;
         line-height: 20px;
+        @include mq-tablet {
+          font-size: 1.8rem;
+          line-height: 28px;
+        }
       }
     }
   }
