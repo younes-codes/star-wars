@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+        - use of js script in head tag to stop CSS transition from firing on page load
+        - use of defer for performance due to script tag inside head tag
+    -->
+    <link rel="stylesheet" href="main.css" />
+    <title>StarWars</title>
+  </head>
+  <body>
+    <main>
+      <div class="nav-container">
+        <nav>
+          <div class="navigation-container">
+            <div class="menu" id="menu">
+              <button id="close-menu">
+                <img src="./assets/close.png" alt="" />
+              </button>
+              <ul>
+                <li><a href="">le côté lumineux</a></li>
+                <li><a href="">le côté obscur</a></li>
+                <li><a href="">l'empire</a></li>
+                <li><a href="">les drôides</a></li>
+                <li><a href="">les ewoks</a></li>
+                <li><a href="">jabba le huit</a></li>
+              </ul>
+            </div>
+            <button class="open-menu" id="open-menu">
+              <img src="./assets/menu.png" alt="ouvrir le menu" />
+            </button>
+          </div>
+          <div class="logo-container">
+            <img class="logo" src="./assets/header.png" alt="" />
+          </div>
+        </nav>
+      </div>
+
+      <section class="section-1">
+        <div class="text-img">
+          <div class="text">
+            <h1>Star Wars, The Force Awakens</h1>
+            <p>
+              Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas
+              fini avec la tyrannie et l’oppression. Les membres de l'Alliance
+              rebelle, devenus la « Résistance », combattent les vestiges de
+              l'Empire réunis sous la bannière du « Premier Ordre ».
+            </p>
+            <p>
+              Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark
+              Vador et pourchasse les ennemis du Premier Ordre à travers la
+              galaxie. Au même moment, une jeune femme nommée Rey, pilleuse
+              d'épaves sur la planète désertique Jakku, va faire la rencontre de
+              Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa
+              vie.
+            </p>
+
+            <p>
+              lus de 30 ans après la bataille d'Endor, la galaxie n'en a pas
+              fini avec la tyrannie et l’oppression. Les membres de l'Alliance
+              rebelle, devenus la « Résistance », combattent les vestiges de
+              l'Empire réunis sous la bannière du « Premier Ordre ».
+            </p>
+
+            <p>
+              Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark
+              Vador et pourchasse les ennemis du Premier Ordre à travers la
+              galaxie. Au même moment, une jeune femme nommée Rey, pilleuse
+              d'épaves sur la planète désertique Jakku, va faire la rencontre de
+              Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa
+              vie.
+            </p>
+
+            <p>
+              Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas
+              fini avec la tyrannie et l’oppression. Les membres de l'Alliance
+              rebelle, devenus la « Résistance », combattent les vestiges de
+              l'Empire réunis sous la bannière du « Premier Ordre ».
+            </p>
+
+            <p>
+              Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark
+              Vador et pourchasse les ennemis du Premier Ordre à travers la
+              galaxie. Au même moment, une jeune femme nommée Rey, pilleuse
+              d'épaves sur la planète désertique Jakku, va faire la rencontre de
+              Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa
+              vie.
+            </p>
+          </div>
+          <div class="img-pub" id="img-pub">
+            <img src="./assets/ad.jpg" alt="publicite ps4" />
+          </div>
+        </div>
+
+        <div id="kilokren-img">
+          <picture>
+            <source
+              media="(min-width:768px)"
+              srcset="./assets/kiloren-2x.jpg"
+            />
+            <img src="./assets/kiloren.jpg" alt="kilokren" />
+          </picture>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <h2>
+          <!-- use of br instead of white-space:pre; 
+                because IDE auto indent -->
+          A long time ago, in a galaxy far, far away…
+        </h2>
+        <div class="part-one">
+          <div class="r2d2-img">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/r2d2_c3p0-2x.jpg"
+              />
+              <img src="./assets/r2d2_c3p0.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="r2d2-text">
+            <p>
+              <strong>La Guerre des étoiles</strong>(titre original
+              <strong>Star Wars</strong>, soit littéralement Guerres Stellaires
+              ) est une épopée cinématographique de science-fiction créée par
+              George Lucas, considérée comme un élément phare du space opera.
+              Prévue à la base pour être une suite de trois trilogies
+              (triptyque), Lucas fut contraint, par manque de moyens techniques,
+              de commencer par la seconde trilogie (<strong
+                >l'Épisode IV - Un nouvel espoir</strong
+              >) en 1977. La série connut un succès phénoménal partout dans le
+              monde et engendra une très importante communauté de fans. Sans
+              prétendre expliquer le succès du premier film (s'il y avait une
+              recette, cela se saurait), on peut, toutefois, noter que, malgré
+              le manque de moyens (le budget était relativement modeste, les
+              acteurs presque inconnus) :
+            </p>
+          </div>
+        </div>
+        <div class="part-two">
+          <picture>
+            <source
+              media="(min-width:768px)"
+              srcset="./assets/stormtroopers-2x.jpg"
+            />
+            <img src="./assets/stormtroopers.jpg" alt="kilokren" />
+          </picture>
+          <ul>
+            <li>
+              - Il fait appel à des références connues et appréciées des jeunes
+              de l'époque : films de cape et d'épée, westerns, péplums, contes
+              de fées et même le Seigneur des Anneaux de J.R.R. Tolkien ; cette
+              œuvre n'apparaît pas comme de la science-fiction au sens strict
+              mais plutôt comme du space fantasy.
+            </li>
+            <li>
+              - Les effets spéciaux, supervisés par Ken Ralston, étaient
+              réellement novateurs, avec notamment la participation de John
+              Dykstra (qui a également participé au premier film de Star Trek),
+              qui avait développé une nouvelle manière d'animer les maquettes
+              des vaisseaux en coordonnant leurs mouvements par ordinateur
+              (Dykstraflex).
+            </li>
+            <li>
+              - Le film a développé un univers cohérent, avec, comme
+              préoccupation constante, autant la création d'une ambiance que
+              l'action proprement dite.
+            </li>
+            <li>
+              - La musique, composée par John Williams, introduit des thèmes
+              récurrents et des leitmotivs (procédé classique mais renforçant la
+              cohérence).
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        <h3><strong>TM Lucasfilm</strong> Ltd. All Rights Reserved</h3>
+        <div class="legal">
+          <ul>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Legal Notices</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Your California Privacy Rights</a></li>
+            <li><a href="">Star Wars at Disney Store</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="social-network">
+          <ul>
+            <li><a href="">follow star wars</a></li>
+
+            <li>
+              <a href="">
+                <img src="./assets/icon_facebook.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/icon_twitter.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/icon_instagram.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

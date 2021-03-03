@@ -1,0 +1,88 @@
+footer {
+  background: url(./assets/darthvader.jpg) no-repeat center / auto;
+  height: 271px;
+  width: 100%;
+
+  @include mq-footer {
+    height: 542px;
+    background: url(./assets/darthvader_2x.jpg) no-repeat center / cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  h3 {
+    display: none;
+    @include mq-footer {
+      display: block;
+      width: 100%;
+      color: #b9b2b2;
+      text-align: center;
+    }
+  }
+
+  div {
+    height: 50%;
+    @include mq-footer {
+      height: auto;
+      width: 50%;
+    }
+  }
+
+  .legal {
+    display: flex;
+    justify-content: space-around;
+    ul {
+      width: 50%;
+      padding-top: 20px;
+      li {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        a {
+          color: #b9b2b2;
+          text-decoration: underline;
+        }
+      }
+    }
+    @include mq-footer {
+      flex: 2 0 0;
+    }
+  }
+
+  .social-network {
+    @include mq-footer {
+      flex: 1 0 0;
+      padding-top: 20px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      @include mq-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      li:first-child {
+        width: 50%;
+        text-align: center;
+        @include mq-footer {
+          width: 100%;
+          margin-top: 0;
+        }
+        a {
+          color: #b9b2b2;
+          text-transform: uppercase;
+        }
+      }
+      li {
+        @include mq-footer {
+          margin: 10px;
+        }
+      }
+    }
+    img {
+      width: 25px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  list-style-type: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Mixins Media Query
+
+@mixin mq-tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mq-footer {
+  @media (min-width: 524px) {
+    @content;
+  }
+}
