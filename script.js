@@ -13,6 +13,7 @@ btnCloseMenu.onclick = () => {
   body.style.overflow = "scroll";
 };
 
+// Script for sticky ad
 window.onload = () => {
   const imgPub = document.getElementById("img-pub");
   const offsetTopImgPub = imgPub.offsetTop - 50;
@@ -22,10 +23,10 @@ window.onload = () => {
   const kilokrenImg = document.getElementById("kilokren-img");
   const offsetTopKilokrenImg = kilokrenImg.offsetTop;
   const endPointImgPub = offsetTopKilokrenImg - offsetHeightImgPub - 30;
-  console.log(offsetTopKilokrenImg);
-  console.log(endPointImgPub);
-  console.log(offsetHeightImgPub);
-  //console.log(`img Kilokren ${offsetTopKilokrenImg}`);
+  // console.log(offsetTopKilokrenImg);
+  // console.log(endPointImgPub);
+  // console.log(offsetHeightImgPub);
+  // console.log(`img Kilokren ${offsetTopKilokrenImg}`);
   window.onscroll = () => {
     const scrollPos = window.pageYOffset || document.documentElement.scrollTo;
     if (scrollPos >= offsetTopImgPub) {

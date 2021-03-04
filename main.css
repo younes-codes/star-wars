@@ -188,7 +188,7 @@ section p {
     justify-content: space-between;
   }
   .section-1 .text-img .text {
-    width: 35%;
+    width: 55%;
   }
   .section-1 .text-img .text p {
     text-align: left;
@@ -289,6 +289,7 @@ section p {
   .section-2 .part-two ul li {
     font-size: 1.8rem;
     line-height: 28px;
+    margin-bottom: 20px;
   }
 }
 
@@ -301,11 +302,7 @@ footer {
 
 @media (min-width: 524px) {
   footer {
-    height: 642px;
-    background: url(./assets/darthvader_2x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background: url(./assets/darthvader.jpg) center 0 no-repeat #181818;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
