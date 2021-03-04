@@ -23,6 +23,10 @@ window.onload = () => {
   const kilokrenImg = document.getElementById("kilokren-img");
   const offsetTopKilokrenImg = kilokrenImg.offsetTop;
   const endPointImgPub = offsetTopKilokrenImg - offsetHeightImgPub - 30;
+
+  const nav = document.getElementById("nav");
+  const logo = document.getElementById("logo");
+
   // console.log(offsetTopKilokrenImg);
   // console.log(endPointImgPub);
   // console.log(offsetHeightImgPub);
@@ -38,5 +42,8 @@ window.onload = () => {
     if (scrollPos + 50 + offsetHeightImgPub >= offsetTopKilokrenImg) {
       imgPub.style.cssText = `position: absolute; top:${endPointImgPub}px ; left: ${offsetLeftImgPub}px`;
     }
+
+    nav.style.backgroundPositionY = `${scrollPos / 4}px`;
+    logo.style.transform = `translateY(-${scrollPos / 2}px)`;
   };
 };

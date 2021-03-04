@@ -2,7 +2,6 @@ nav {
   position: relative;
   background-image: url(./assets/header-bg.png);
   background-size: contain;
-  background-attachment: fixed;
   height: 500px;
   @include mq-tablet {
     background-image: url(./assets/header-bg-2x.png);
