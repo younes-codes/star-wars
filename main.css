@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.clean-transition * {
+  transition: none !important;
+}
+
 nav {
   position: relative;
   background-image: url(./assets/header-bg.png);
@@ -281,7 +285,7 @@ section p {
 @media (min-width: 768px) {
   .section-2 .part-two .bg-stormtroopers-container .bg-stormtroopers {
     background: url(./assets/stormtroopers-2x.jpg);
-    height: 500px;
+    height: 250px;
   }
 }
 

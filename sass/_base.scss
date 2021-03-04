@@ -28,6 +28,15 @@ a {
   text-decoration: none;
 }
 
+//Reset clean Transition
+
+.clean-transition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 // Mixins Media Query
 
 @mixin mq-tablet {

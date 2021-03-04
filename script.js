@@ -17,3 +17,7 @@ window.onload = () => {
     stickyAd.play("img-pub", "kilokren-img", "menu");
   };
 };
+
+window.addEventListener("load", () => {
+  document.body.classList.remove("clean-transition");
+});
