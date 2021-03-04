@@ -4,10 +4,6 @@ section {
     text-align: center;
   }
 
-  h1 {
-    margin: 30px 0;
-  }
-
   p {
     text-align: center;
     padding: 0 20px;
@@ -30,6 +26,9 @@ section {
     .text-img {
       display: flex;
       justify-content: space-between;
+      @include mq-tablet {
+        padding-top: 30px;
+      }
       .text {
         width: 55%;
         p {
@@ -43,8 +42,8 @@ section {
     display: none;
     @include mq-tablet {
       display: block;
-      margin-top: 30px;
-      height: 100%;
+      //margin-top: 30px;
+      height: fit-content;
       img {
         width: auto;
         height: auto;
@@ -92,8 +91,18 @@ section {
   .part-two {
     display: flex;
     flex-direction: column-reverse;
-    img {
-      transform: translateY(3px);
+    .bg-stormtroopers-container {
+      overflow: hidden;
+      position: relative;
+      .bg-stormtroopers {
+        background: url(./assets/stormtroopers.jpg) 50% / cover no-repeat;
+        background-repeat: no-repeat;
+        height: 250px;
+        @include mq-tablet {
+          background: url(./assets/stormtroopers-2x.jpg);
+          height: 500px;
+        }
+      }
     }
     ul {
       margin-bottom: 50px;
